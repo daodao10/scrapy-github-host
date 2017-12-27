@@ -1,0 +1,5 @@
+cryptography==2.1.4
+pyOpenSSL==17.5.0
+parsel==1.2.0
+Twisted==17.9.0
+Scrapy==1.4.0
