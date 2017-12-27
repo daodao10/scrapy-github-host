@@ -6,4 +6,4 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - scrapy scrawl Chinaz
+  - scrapy crawl Chinaz
