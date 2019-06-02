@@ -6,7 +6,7 @@ class ChinazSpider(scrapy.Spider):
     name = 'Chinaz'
     allowed_domains = ['chinaz.com']
     hostitems = []
-    start_urls = ['http://ip.chinaz.com/']
+    start_urls = ['http://ip.tool.chinaz.com/']
 
     def start_requests(self):
         s = """
@@ -24,7 +24,7 @@ class ChinazSpider(scrapy.Spider):
         """
 
         for i in s.split():
-            url = 'http://ip.chinaz.com/' + i.strip()
+            url = 'http://ip.tool.chinaz.com/' + i.strip()
             # yield scrapy.Request(url=url, callback=self.parse)
             yield scrapy.Request(url=url, callback=self.parse_to_file)
 
