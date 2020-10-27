@@ -1,4 +1,4 @@
-cryptography==2.7
+cryptography==3.2
 pyOpenSSL==19.0.0
 parsel==1.5.1
 Twisted==19.2.0
